@@ -36,7 +36,8 @@ const sendMessage = async (message, conversationHistory) => {
   return {
     id: Date.now(),
     text: data.choices[0].message.content,
-    sender: "bot"
+    sender: "bot",
+    timestamp: new Date().toISOString()
   };
 };
 

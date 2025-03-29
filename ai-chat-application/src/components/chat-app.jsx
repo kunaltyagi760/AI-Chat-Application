@@ -25,7 +25,8 @@ const ChatApp = () => {
     const userMessage = {
       id: Date.now(),
       text,
-      sender: "user"
+      sender: "user",
+      timestamp: new Date().toISOString()
     }
 
     setMessages((prev) => [...prev, userMessage])
